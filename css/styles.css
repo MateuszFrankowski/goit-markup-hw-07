@@ -43,6 +43,7 @@ body {
 
 .container {
   width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -132,13 +133,13 @@ body {
   color: var(--project-color-gray);
 }
 
-.contact-icon-frame {
+/* .contact-icon-frame {
   width: 16px;
   height: 16px;
   display: flex;
   justify-content: left;
   align-items: center;
-}
+} */
 .contact-icon {
   fill: var(--project-color-gray);
   display: block;
@@ -151,10 +152,10 @@ body {
   align-items: center;
 }
 
-.contact li:hover .contact-icon,
-.contact li:focus-within .contact-icon,
-.contact li:hover a,
-.contact li:focus-within a {
+.contact__item:hover .contact-icon,
+.contact__item:focus-within .contact-icon,
+.contact__item:hover .contact__link,
+.contact__item:focus-within .contact__link {
   fill: var(--project-color-blue);
   color: var(--project-color-blue);
   transition: color 250ms;
@@ -550,14 +551,13 @@ body {
   height: 24px;
 }
 /*-------- filters --------*/
-.filters__ontainer {
+.filters__container {
   padding-bottom: 50px;
 }
 .filters__list {
   list-style: none;
   display: flex;
   justify-content: center;
-
   gap: 8px;
 }
 .filters__button {
@@ -712,7 +712,6 @@ body {
   pointer-events: none;
 }
 
-/* =========END modal window ========*/
 /* =========Form ========*/
 .modal__title {
   text-align: center;
@@ -723,16 +722,15 @@ body {
   margin-bottom: 12px;
 }
 
-.form-label {
+/* .form-label {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* 
-  margin-bottom: 10px; */
-  gap: 4px;
-}
 
-.form__input-box {
+  gap: 4px;
+} */
+
+.form__set {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -857,3 +855,4 @@ body {
   width: 1px;
 }
 /* =========END form ========*/
+/* =========END modal window ========*/

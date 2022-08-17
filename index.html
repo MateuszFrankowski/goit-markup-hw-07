@@ -11,7 +11,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css?=1.0.7" />
+    <!-- <link rel="stylesheet" href="./css/styles.css?=1.0.7" /> -->
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
@@ -20,7 +21,7 @@
       <div class="modal">
         <p class="modal__title">Zostaw swoje dane w formularzu poniżej</p>
         <form class="form">
-          <div class="form__input-box">
+          <div class="form__set">
             <input
               type="text"
               class="form__input"
@@ -35,21 +36,21 @@
             </svg>
             <label for="username" class="form__label"><span class="label-text">Imie</span> </label>
           </div>
-          <div class="form__input-box">
+          <div class="form__set">
             <input type="tel" class="form__input" name="tel" id="tel" required />
             <svg class="form__icon">
               <use href="images/sprite.svg#icon-phone-form"></use>
             </svg>
             <label for="tel" class="form__label"><span class="label-text">Telefon</span> </label>
           </div>
-          <div class="form__input-box">
+          <div class="form__set">
             <input type="email" class="form__input" name="checkbox" id="email" required />
             <svg class="form__icon">
               <use href="images/sprite.svg#icon-email-form"></use>
             </svg>
             <label for="email" class="form__label"><span class="label-text">Email</span> </label>
           </div>
-          <div class="form__input-box">
+          <div class="form__set">
             <textarea
               name="feedback"
               class="form__text-area"
@@ -71,7 +72,7 @@
             />
 
             <label for="user-policy" class="form__policy-text">
-              Oświadczam iż akceptuję <a href="" class="consents">Regulamin</a> i
+              Oświadczam iż akceptuję <a href="" class="form__consents">Regulamin</a> i
               <a href="" class="form__consents">Politykę Prywatności.</a></label
             >
           </div>
@@ -108,7 +109,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li lass="contact__item">
+            <li class="contact__item">
               <a class="contact__link" href="tel:+48111111111">
                 <svg class="contact-icon">
                   <use href="images/sprite.svg#icon-smartphone"></use>
@@ -474,16 +475,16 @@
             >Web<span class="logo__span page-footer__logo">Studio</span></a
           >
 
-          <address class="adress">
-            <p class="adress__street">m. Warszawa, Aleje Jerozolimskie 21</p>
-            <ul class="adress__list">
+          <address class="address">
+            <p class="address__street">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <ul class="address__list">
               <!-- Link do adresu e-mail  -->
-              <li class="adress__item">
-                <a class="adress__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a class="address__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
               <!-- Link do numeru telefonu -->
-              <li class="adress__item">
-                <a class="adress__tel" href="tel:+48111111111">+48 111 111 111</a>
+              <li class="address__item">
+                <a class="address__tel" href="tel:+48111111111">+48 111 111 111</a>
               </li>
             </ul>
           </address>
