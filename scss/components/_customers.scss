@@ -1,4 +1,4 @@
-%animation {
+%animation1 {
   fill: getColor('project-color-blue');
   border-color: getColor('project-color-blue');
   transition-property: border-color, fill;
@@ -29,9 +29,9 @@
     height: 60.04px;
     &:hover,
     &:focus {
-      @extend %animation;
+      @extend %animation1;
       .customers__icon {
-        @extend %animation;
+        @extend %animation1;
       }
     }
   }
@@ -44,30 +44,10 @@
     padding: 17.71px 32px 14.25px 32px;
     &:hover,
     &:focus {
-      @extend %animation;
+      @extend %animation1;
       .customers__icon {
-        @extend %animation;
+        @extend %animation1;
       }
     }
   }
 }
-
-// .customers__icon:hover,
-// .customers__icon:focus,
-// .customers__set:hover,
-// .customers__set:focus {
-//   fill: var(--project-color-blue);
-//   border-color: var(--project-color-blue);
-//   transition-property: border-color, fill;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .customers__set:hover .customers__icon,
-// .customers__set:focus .customers__icon {
-//   fill: var(--project-color-blue);
-//   border-color: var(--project-color-blue);
-//   transition-property: border-color, fill;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }

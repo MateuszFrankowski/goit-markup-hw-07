@@ -1,4 +1,4 @@
-%animation {
+%animation5 {
   fill: getColor('project-color-blue');
   border-color: getColor('project-color-blue');
   transition-property: border-color, fill;
@@ -140,7 +140,7 @@
 }
 
 .form__input:focus + .form__icon {
-  @extend %animation;
+  @extend %animation5;
 }
 .form__policy:checked + .form__policy-text:before {
   background-color: getColor('project-color-blue');

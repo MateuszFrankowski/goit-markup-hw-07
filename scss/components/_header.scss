@@ -1,4 +1,4 @@
-%animation {
+%animation4 {
   color: getColor('project-color-blue');
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,7 +71,7 @@
 .menu-link {
   &:hover,
   &:focus {
-    @extend %animation;
+    @extend %animation4;
   }
 }
 .contact {
@@ -107,14 +107,14 @@
   &:hover {
     .contact-icon,
     .contact__link {
-      @extend %animation;
+      @extend %animation4;
       fill: getColor('project-color-blue');
     }
   }
   &:focus-within {
     .contact-icon,
     .contact__link {
-      @extend %animation;
+      @extend %animation4;
       fill: getColor('project-color-blue');
     }
   }
