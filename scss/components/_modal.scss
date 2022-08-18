@@ -18,7 +18,7 @@
   transition: opacity 250ms, visibility 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-// cos
+
 .modal {
   padding: 2rem 1rem;
   box-sizing: border-box;
@@ -42,12 +42,6 @@
     color: getColor('project-color-dark');
     margin-bottom: 12px;
   }
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .form {
@@ -177,14 +171,4 @@
 .submit-btn:hover,
 .submit-btn:focus {
   background-color: #1976d2;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
 }
